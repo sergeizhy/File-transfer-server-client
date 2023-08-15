@@ -13,11 +13,11 @@ or manully closing and restarting the server data is loaded back again from seco
 to the prinmary database
 
 - clients code is self explanatory define packet -> load the data to the relevent request -> split the packet
-     -> encrypt -> split to the right buffer size -> send
+     -> encrypt -> split to the right buffer size -> send,
 same proccess is applied to receiving
 
 - server code uses socketserver as a wrapper to handle data transaction for each chunk of data, data is processed
-by StructHandler based on a ready memory templates 
+by StructHandler based on a ready templates 
 data unpacking - the data for each request is unique which requires unique object the relevent object is created 
 with the relevent attributes for the request to be translated 
 
