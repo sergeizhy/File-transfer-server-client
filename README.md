@@ -10,4 +10,4 @@ The server uses an in-memory SQLite database (:memory:) as its primary data stor
 
 The client’s code is self-explanatory: define a packet, load data into the relevant request structure, split the packet, encrypt it, split it into the correct buffer size, and send it. The same process applies when receiving data.
 
-On the server side, we use socketserver as a wrapper to handle data transmission in chunks. The data is processed by StructHandler, which relies on predefined templates for data unpacking. Since each request is unique, it requires a unique object. The relevant object is created with the relevant attributes for the request to be translated.
+On the server side, used socketserver as a wrapper to handle data transmission in chunks. The data is processed by StructHandler, which relies on predefined templates for data unpacking. Since each request is unique, it requires a unique object. The relevant object is created with the relevant attributes for the request to be translated.
